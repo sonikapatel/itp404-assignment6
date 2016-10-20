@@ -1,0 +1,18 @@
+<div style="float:left;">
+{{#each model.artists as |artist|}}
+
+{{#link-to 'artists.artist' artist.id}}
+<li>{{artist.name}}</li>
+{{/link-to}}
+{{/each}}
+<br> 
+<br> 
+</div>
+
+{{outlet}}
+
+{{#link-to 'artists.new'}}
+Create Artist
+{{/link-to}}
+
+
